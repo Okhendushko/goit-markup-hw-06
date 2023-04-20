@@ -569,14 +569,14 @@ background-color: #31D0AA;
 
     background: var(--primary-brand-color);
 
-    transition: opaciti var(--time-transition-duration), visibiliti var(--time-transition-duration) ;
+    transition: transform var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .overlay-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--background-alerts);
+    color: var(--light-color);
 }
 
 .hover-link:hover .overlay-background,
@@ -619,7 +619,7 @@ background-color: #31D0AA;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   
-  transition: opacity var(--time-transition-duration) var(--transition-timing-function);
+  transition: opacity var(--time-transition-duration), var(--transition-timing-function);
 }
 
 .modal.is-hidden {
